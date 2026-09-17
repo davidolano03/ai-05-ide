@@ -1,0 +1,50 @@
+\begin{frame}[fragile]{Lean: the paper's wage identity}
+\small
+For an active firm with an AI solver (Proposition 2, pp. 19--20):
+\[
+n(a-w)-r=0,\quad r=a,\quad n^{-1}=h(1-z)
+\quad\Longrightarrow\quad w=a[1-h(1-z)].
+\]
+\begin{lstlisting}
+theorem automatedWorkerWage_of_zeroProfit
+    {n a w r h z : (*@$\mathbb{R}$@*)} (hn : n (*@$\ne$@*) 0)
+    (hzero : n * (a - w) - r = 0) (hrent : r = a)
+    (hteam : 1 / n = h * (1 - z)) :
+    w = a * (1 - h * (1 - z)) := by
+\end{lstlisting}
+\vspace{-1mm}
+\begin{lstlisting}
+  have hsub : a - w = a / n := by
+    apply (eq_div_iff hn).2
+    nlinarith [hmul]
+\end{lstlisting}
+\footnotesize
+Selected proof step: \texttt{hmul} is $n(a-w)=a$.
+\texttt{eq\_div\_iff hn} justifies division by nonzero $n$; \texttt{nlinarith} checks the algebra.
+The real-valued premises supply zero profit, rent, and team size. Lean does not derive their equilibrium origin here.
+\vfill\scriptsize \texttt{MainTheorems.lean}: direct Lean check passed (exit 0). Full-paper check reported next.
+\end{frame}
+
+\begin{frame}[fragile]{Lean: capability determines the sign in our example}
+\small
+Own finite wage formula, with the economic domain stated:
+\[
+0\le a\le\tfrac13:\qquad
+\frac15<\frac{a}{2(1-a)}\quad\Longleftrightarrow\quad\frac27<a.
+\]
+\begin{lstlisting}
+theorem autonomousBottomWage_gt_baseline_iff
+    {a : (*@$\mathbb{R}$@*)} (ha0 : 0 (*@$\le$@*) a) (ha13 : a (*@$\le$@*) 1 / 3) :
+    baselineBottomWage < autonomousBottomWage a (*@$\leftrightarrow$@*) (2 / 7 : (*@$\mathbb{R}$@*)) < a := by
+\end{lstlisting}
+\begin{lstlisting}
+  have hden : 0 < 2 * (1 - a) := by
+    norm_num at ha13 (*@$\vdash$@*)
+    nlinarith
+\end{lstlisting}
+\footnotesize
+\texttt{hden} proves the denominator positive. The proof then uses
+\texttt{lt\_div\_iff}$_0$ to multiply without reversing the inequality and checks both directions.
+Lean checks the comparison of defined wages; hand calculations and the LP check their equilibrium interpretation.
+\vfill\input{slides/lean-status.tex}
+\end{frame}

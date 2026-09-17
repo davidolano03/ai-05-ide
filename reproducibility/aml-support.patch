@@ -1,0 +1,13 @@
+diff --git a/lakefile.toml b/lakefile.toml
+--- a/lakefile.toml
++++ b/lakefile.toml
+@@
++[[lean_lib]]
++name = "IT25KnowledgeEconomy"
++srcDir = "papers"
+diff --git a/papers/IT25KnowledgeEconomy.lean b/papers/IT25KnowledgeEconomy.lean
+new file mode 100644
+--- /dev/null
++++ b/papers/IT25KnowledgeEconomy.lean
+@@
++import IT25KnowledgeEconomy.ProofInterface

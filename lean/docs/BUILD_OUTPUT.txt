@@ -1,0 +1,19 @@
+Focused theorem check:
+Command: lake env lean papers\IT25KnowledgeEconomy\MainTheorems.lean
+Exit code: 0
+Output: none
+
+Paper target build:
+Command: lake build +IT25KnowledgeEconomy
+Exit code: 0
+Output:
+✔ [8313/8317] Built IT25KnowledgeEconomy.MainTheorems (23s)
+✔ [8314/8317] Built IT25KnowledgeEconomy.Assumptions (23s)
+✔ [8315/8317] Built IT25KnowledgeEconomy.PaperInterface (23s)
+warning: papers/IT25KnowledgeEconomy/ProofInterface.lean:15:8: declaration uses 'sorry'
+warning: papers/IT25KnowledgeEconomy/ProofInterface.lean:19:8: declaration uses 'sorry'
+✔ [8316/8317] Built IT25KnowledgeEconomy.ProofInterface (22s)
+✔ [8317/8317] Built IT25KnowledgeEconomy (22s)
+Build completed successfully (8317 jobs).
+
+Run date: 2026-09-17
