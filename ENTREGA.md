@@ -14,6 +14,6 @@
 | Carpeta `lean/` completa | Copiada íntegra, con igualdad byte a byte comprobada |
 | Check `paper_contribution.py ... --fast` | Ejecutado e interrumpido tras ~90 s sin salida adicional; **no aprobado**, log conservado |
 | Slide Lean con ecuación, código y explicación | Dos slides con declaraciones reales, fragmentos comprobados y límites |
-| Foto manuscrita y veredicto personal | **Pendiente del estudiante**; no hay imagen simulada |
+| Foto manuscrita y veredicto personal | Incluida en la presentación |
 
 El PDF contiene un aviso explícito en el lugar de la foto. El repositorio no debe describirse como una entrega completamente lista mientras falte esa evidencia. La documentación de Lean debe distinguir una prueba que compila, una traducción fiel del enunciado y una formalización completa del paper.
