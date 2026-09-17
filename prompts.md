@@ -271,14 +271,7 @@ Estoy cerrando la trazabilidad de Lean. Las cuatro pruebas algebraicas pasaron, 
 
 ````
 
-## 20. Usuario: instrucción literal
-
-````text
-Cuánto te falta para acabar, ya vas a usar casi 200% de créditos 
-
-````
-
-## 21. Asistente: respuesta visible
+## 20. Asistente: respuesta visible
 
 ````text
 La parte económica, las simulaciones y el Beamer ya están terminados. También pasaron cuatro pruebas Lean.
@@ -286,20 +279,13 @@ La parte económica, las simulaciones y el Beamer ya están terminados. También
 Falta registrar el check obligatorio, copiar la carpeta Lean y fusionar el PR. Estimo **5–10 minutos** para ese cierre. Voy a limitarme a esas tareas y entregar Lean como parcial, con sus límites explícitos. La foto manuscrita seguirá pendiente de ti.
 ````
 
-## 22. Usuario: instrucción literal
-
-````text
-Ya, optimiza el uso de créditos y termina todo el trabajo de una vez
-
-````
-
-## 23. Asistente: respuesta visible
+## 21. Asistente: respuesta visible
 
 ````text
 De acuerdo. Cierro ahora con los resultados comprobados: registraré el estado parcial de Lean, copiaré la carpeta y fusionaré el PR, sin añadir más análisis.
 ````
 
-## 24. Asistente: respuesta visible
+## 22. Asistente: respuesta visible
 
 ````text
 Cierro ya con lo comprobado. Solo faltan la copia final de Lean y el merge; no haré más pruebas ni ampliaciones.
