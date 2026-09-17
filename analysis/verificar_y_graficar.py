@@ -20,6 +20,9 @@ assert sp.solve_univariate_inequality(wl > sp.Rational(1,5), a, relational=False
 L, M, H = sp.symbols("L M H")
 solution = sp.solve([L+M/2-sp.Rational(1,2), L+H/2-1, M+H/4-1], [L,M,H])
 assert solution == {L:sp.Rational(1,5), M:sp.Rational(3,5), H:sp.Rational(8,5)}
+labor_formula=sp.Rational(1,2)*wl+sp.Rational(3,10)*(1-2*a)/(1-a)+sp.Rational(1,5)*2
+assert sp.simplify(labor_formula-(14-15*a)/(20*(1-a))) == 0
+assert sp.simplify(sp.diff(labor_formula,a)+1/(20*(1-a)**2)) == 0
 
 z, masses, h, mu = [0,.5,1], [.5,.3,.2], .5, 10
 baseline = solve(z, masses, h)
@@ -91,6 +94,7 @@ plt.close(fig)
 
 lines=["# Verificación computacional", "", "Ejecución local propia. Tolerancia numérica: `1e-8`.","",
        "- SymPy verificó exactamente el sistema inicial y la identidad `(7a-2)/(10(1-a))`.",
+       "- También verificó la extensión: el ingreso laboral autónomo en `0<=a<=1/3` es `(14-15a)/(20(1-a))`, con derivada `-1/[20(1-a)^2]`.",
        "- Se comprobaron 11 casos analíticos, incluido el punto de igualdad `a=2/7` y los extremos del tramo autónomo.",
        "- En esos casos los rangos duales confirman salarios únicos, dentro de tolerancia.",
        "- Un control con masas `(2/3,1/3)` y tipos `(0,1)` detecta correctamente multiplicidad: salarios bajos `[0,1/2]` y altos `[1,2]`.",

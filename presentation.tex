@@ -21,7 +21,8 @@
 \newcommand{\wa}{w^{*}}
 \newcommand{\wc}{w^{\star}}
 \newcommand{\src}[1]{\vfill{\scriptsize\color{gray}Source: arXiv v11, #1.}}
-\lstset{basicstyle=\ttfamily\scriptsize,columns=fullflexible,breaklines=true,showstringspaces=false,frame=single,rulecolor=\color{teal!35},backgroundcolor=\color{teal!3},aboveskip=4pt,belowskip=4pt}
+\lstset{basicstyle=\ttfamily\scriptsize,columns=fullflexible,breaklines=true,showstringspaces=false,frame=single,rulecolor=\color{teal!35},backgroundcolor=\color{teal!3},aboveskip=4pt,belowskip=4pt,
+literate={ℝ}{{$\mathbb R$}}1 {≤}{{$\le$}}1 {≥}{{$\ge$}}1 {↔}{{$\leftrightarrow$}}1 {∀}{{$\forall$}}1 {∧}{{$\land$}}1 {∈}{{$\in$}}1 {≠}{{$\ne$}}1 {→}{{$\to$}}1 {∃}{{$\exists$}}1}
 \title{Artificial Intelligence in the Knowledge Economy}
 \subtitle{Capability, autonomy, and the price of expertise}
 \author{davidolano03}
@@ -121,7 +122,7 @@ The least knowledgeable use AI. Some people strictly gain, and some strictly los
 \end{block}
 \end{columns}
 \medskip
-The equilibrium is unique and efficient, and maximizes labor income.
+The equilibrium is unique and efficient. It maximizes labor income among feasible co-pilot allocations.
 \[
 r^\star=0\qquad\text{because some compute is idle.}
 \]
@@ -287,6 +288,23 @@ The algebra rejects the claim that capability is irrelevant. The threshold belon
 \end{frame}
 
 \appendix
+\begin{frame}{Extension: output can rise while labor income falls}
+\small
+In our autonomous three-type economy, for $0\le a\le1/3$:
+\[
+\mathcal L^*(a)=\tfrac12\wa_L+\tfrac3{10}\wa_M+\tfrac15\wa_H
+=\frac{14-15a}{20(1-a)}.
+\]
+\[
+\frac{d\mathcal L^*}{da}=-\frac{1}{20(1-a)^2}<0,
+\qquad
+\frac{dY^*}{da}=\mu-\frac{1}{20(1-a)^2}>0\quad(\mu=10).
+\]
+Low wages rise and high wages stay fixed. Falling middle wages dominate the change in aggregate labor income.
+
+This compares \emph{different autonomous capabilities}. Labor income still exceeds the no-AI baseline throughout this interval.
+\vfill\footnotesize Own extension; exact symbolic verification. No claim is made outside this interval.
+\end{frame}
 \begin{frame}{Source version and reproducibility}
 \small
 Ide, E., \& Talam\`as, E. (2025). \emph{Artificial Intelligence in the Knowledge Economy}. JPE 133(12), 3762--3800.\par

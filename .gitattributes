@@ -1,2 +1,3 @@
-# Auto detect text files and perform LF normalization
 * text=auto
+# Preservar los bytes de la carpeta generada al incorporarla, sin conversiones CRLF.
+lean/** -text

@@ -33,6 +33,8 @@ El Beamer está en inglés por indicación del curso. Este guion ayuda a explica
 
 **8.** El cómputo abundante no es necesariamente gratuito. Si una unidad puede producir `a` por sí sola, dedicarla a asesorar tiene un costo de oportunidad `a`. Si solo puede asesorar y sobra, ese costo cae a cero. La diferencia entre `a-h(1-z)a` y `a` es el costo de ese asesoramiento. Pero estas expresiones solo valen para trabajadores que realmente usan IA. No puedo ponerlas sobre todos los salarios sin resolver primero la asignación.
 
+Cuando la Proposición 6 dice que el equilibrio maximiza ingreso laboral, compara asignaciones factibles **dentro de la economía con copiloto**. No afirma que prohibir autonomía maximice el ingreso laboral agregado frente a cualquier otro régimen.
+
 **9–10.** Las tres ecuaciones igualan producto por trabajador y costo de recursos. Compruebo que la asignación usa exactamente las masas disponibles y que ninguna empresa descartada tiene beneficios positivos. Para el tramo autónomo, los bajos siguen con supervisores medios. Los altos y los medios restantes supervisan IA. La renta de los medios cambia, y por beneficio cero cambia lo que cobra el trabajador bajo. `a/(2(1-a))-1/5` se reduce a `(7a-2)/(10(1-a))`: el denominador es positivo en el tramo, por eso el signo depende solo de `7a-2`. En `2/7` hay indiferencia, no ganancia estricta.
 
 **11.** En el panel izquierdo busco los cruces de cada curva con el salario inicial punteado, no comparo solo la pendiente. El quiebre de la curva autónoma indica un cambio de organización. Fuera de `a<=1/3`, la fórmula derivada en el slide anterior deja de describir todo el equilibrio: el programa vuelve a elegir las actividades. El programa no extrapola la fórmula de un tramo a otro.
@@ -46,6 +48,8 @@ El Beamer está en inglés por indicación del curso. Este guion ayuda a explica
 **Foto.** Esta parte requiere una hoja escrita por el estudiante. No presentar la derivación mecanografiada como evidencia manuscrita. Explicar qué paso se verificó personalmente, qué condición evita invertir la desigualdad al multiplicar y cuál es el veredicto propio. La frase sobre autonomía fue una hipótesis sugerida por el enunciado del profesor; no inventar que hubo una respuesta errónea específica de un LLM.
 
 ## Preguntas previsibles
+
+**Apéndice opcional, extensión propia.** Si preguntan si una IA más capaz siempre eleva el ingreso laboral, mostrar la derivada. En nuestro tramo autónomo, el salario bajo crece, el alto no cambia y el medio cae. Las masas hacen que domine la caída del medio. El producto sube porque aumenta la productividad y renta del cómputo. No confundir esta comparación entre capacidades con la introducción de IA respecto de la economía inicial; el ingreso laboral sigue por encima de su valor sin IA. El apéndice no entra en los 20 minutos previstos salvo que reemplace parte de la explicación de gráficos.
 
 - **¿El umbral es siempre `2/7`?** No. Es exacto para nuestras masas, tipos, `h` y el tramo especificado. El umbral continuo depende de la economía inicial.
 - **¿Hay desempleo?** El modelo dispone de oportunidades abundantes; cambiar ocupaciones no equivale a perder empleo. Las predicciones de salario tampoco miden directamente vacantes.

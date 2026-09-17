@@ -3,6 +3,7 @@
 Ejecución local propia. Tolerancia numérica: `1e-8`.
 
 - SymPy verificó exactamente el sistema inicial y la identidad `(7a-2)/(10(1-a))`.
+- También verificó la extensión: el ingreso laboral autónomo en `0<=a<=1/3` es `(14-15a)/(20(1-a))`, con derivada `-1/[20(1-a)^2]`.
 - Se comprobaron 11 casos analíticos, incluido el punto de igualdad `a=2/7` y los extremos del tramo autónomo.
 - En esos casos los rangos duales confirman salarios únicos, dentro de tolerancia.
 - Un control con masas `(2/3,1/3)` y tipos `(0,1)` detecta correctamente multiplicidad: salarios bajos `[0,1/2]` y altos `[1,2]`.
