@@ -1,0 +1,10 @@
+{
+  "source_folder": "papers/IT25KnowledgeEconomy",
+  "destination": "lean/",
+  "copy_method": "shutil.copytree, sin filtros, symlinks=True",
+  "files": 26,
+  "directories": 2,
+  "byte_for_byte_equal": true,
+  "manifest_sha256": "22386f5a9d1e3ed12259ef42130b16b3d365daa053db9f85b96a3c365d26a105",
+  "git_policy": "git add lean/ ordinario; respetar .gitignore generado; nunca git add -f"
+}

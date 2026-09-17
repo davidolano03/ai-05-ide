@@ -1,0 +1,12 @@
+diff --git a/lakefile.toml b/lakefile.toml
+index 93026c0..dbe5aca 100644
+--- a/lakefile.toml
++++ b/lakefile.toml
+@@ -243,3 +243,7 @@ srcDir = "papers"
+ [[lean_lib]]
+ name = "LBG22StrategicRanking"
+ srcDir = "papers"
++
++[[lean_lib]]
++name = "IT25KnowledgeEconomy"
++srcDir = "papers"

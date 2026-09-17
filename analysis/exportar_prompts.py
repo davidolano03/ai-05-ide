@@ -20,8 +20,8 @@ for line in Path(sys.argv[1]).read_text(encoding="utf-8").splitlines():
     if p.get("type")=="message":
         role=p.get("role")
         content="\n".join(b.get("text","") for b in p.get("content",[]) if b.get("type") in {"input_text","output_text","text"})
-        if role=="user" and content.startswith("Codex, al igual"):
-            rows.append(("Usuario: instrucciones originales", content))
+        if role=="user" and (content.startswith("Codex, al igual") or content.startswith("Cuánto te falta") or content.startswith("Ya, optimiza")):
+            rows.append(("Usuario: instrucción literal", content))
         elif role=="assistant" and p.get("channel") in {None,"commentary","final"} and content:
             rows.append(("Asistente: respuesta visible",content))
     elif p.get("type")=="function_call" and p.get("name","").endswith("spawn_agent"):

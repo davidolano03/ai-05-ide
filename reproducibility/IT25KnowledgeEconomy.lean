@@ -1,0 +1,1 @@
+import IT25KnowledgeEconomy.ProofInterface

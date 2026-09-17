@@ -17,7 +17,7 @@ El Beamer está en inglés por indicación del curso. Este guion ayuda a explica
 | 11. Salarios | 1:00 | Interpretar niveles y cambios sin confundirlos |
 | 12. Producción | 0:50 | Separar renta del cómputo e ingreso laboral |
 | 13. Computación | 0:50 | Qué certifican primal, dual y rangos de salarios |
-| Lean | 3:00 | Matemática, código, prueba, interpretación y límites |
+| 14–15. Lean | 3:00 | Matemática, código, prueba, interpretación y límites |
 | Foto y veredicto | 1:50 | Comprobación personal auténtica y condición decisiva |
 | Cierre | 0:50 | Contestar directamente la trampa del profesor |
 
@@ -43,7 +43,9 @@ Cuando la Proposición 6 dice que el equilibrio maximiza ingreso laboral, compar
 
 **13.** El primal elige quién trabaja con quién. El dual pregunta qué precios hacen que ninguna empresa pueda ganar entrando. Si los recursos alcanzan, los precios descartan beneficios positivos y los dos objetivos coinciden, tengo una certificación numérica del óptimo del modelo finito. Los rangos duales evitan interpretar como unicidad lo que puede ser una selección arbitraria del solver. Tolerancia numérica no es prueba exacta de todos los valores del parámetro.
 
-**Lean.** Usar la declaración real que aparece en el slide definitivo. Leer el dominio antes de la conclusión. Identificar dónde se demuestra la positividad del denominador y qué táctica transforma la desigualdad. Distinguir «esta prueba pasa Lean» de «las Proposiciones 5 y 6 quedaron demostradas desde los supuestos originales». Si quedan objetivos abiertos, nombrarlos y reportar el resultado real del check.
+**14. Lean y la ecuación del paper.** `automatedWorkerWage_of_zeroProfit` toma variables reales y cuatro premisas: tamaño de equipo no nulo, beneficio cero, renta igual a capacidad y la ecuación de tiempo. `eq_div_iff hn` permite dividir por `n` porque `hn` descarta cero. `nlinarith` comprueba la igualdad que queda al multiplicar. Esta prueba demuestra la consecuencia algebraica que muestra el paper; no demuestra la existencia de un equilibrio ni que una empresa deba adoptar IA. El supuesto de renta y la actividad de esa empresa se reciben como premisas.
+
+**15. Lean y el umbral propio.** `autonomousBottomWage_gt_baseline_iff` compara funciones definidas, con `ha0` y `ha13` haciendo visible el tramo económico. `hden` demuestra que `2(1-a)>0`. La táctica de división usa esa positividad, de manera que no puede esconder una inversión incorrecta del signo. `constructor` en el archivo completo divide el «si y solo si» en sus dos direcciones. Las masas y el equilibrio que justifican esas funciones todavía se verifican fuera de Lean, por la derivación y el programa lineal. Distinguir «estas pruebas pasan Lean» de «las Proposiciones 5 y 6 están formalizadas». Reportar el estado del check tal como aparece en el slide y `LEAN_RUN.md`.
 
 **Foto.** Esta parte requiere una hoja escrita por el estudiante. No presentar la derivación mecanografiada como evidencia manuscrita. Explicar qué paso se verificó personalmente, qué condición evita invertir la desigualdad al multiplicar y cuál es el veredicto propio. La frase sobre autonomía fue una hipótesis sugerida por el enunciado del profesor; no inventar que hubo una respuesta errónea específica de un LLM.
 

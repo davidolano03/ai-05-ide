@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "paper": "IT25KnowledgeEconomy",
+  "source_version": "arXiv:2312.05481v11 (24 February 2025)",
+  "source_artifact": "source.txt",
+  "source_artifact_sha256": "07db67521db09701d25ab70f7b2d4e8ae70745e7660777ebc803e2777ca40c6e",
+  "pdf_sha256": "0b3c727a204f7801a9598dacd7ca7fdb385e21ee6877992ea0eb13c0538d8ebf",
+  "inventory_scope": "all independently presented named theory in the main paper",
+  "inventory_complete": true,
+  "independent_semantic_review_complete": false,
+  "items": [
+    {"id":"competitive-equilibrium-definition","kind":"definition","locator":"p. 12; source.txt lines 448-453","formalization":"missing"},
+    {"id":"proposition-1","kind":"proposition","locator":"pp. 15-16; source.txt lines 593-605","formalization":"missing"},
+    {"id":"proposition-2","kind":"proposition","locator":"pp. 18-19; source.txt lines 685-722","formalization":"support-only: one displayed wage identity has a checked conditional algebraic consequence"},
+    {"id":"proposition-3","kind":"proposition","locator":"p. 21; source.txt lines 850-852","formalization":"missing"},
+    {"id":"proposition-4","kind":"proposition","locator":"pp. 21-22; source.txt lines 867-873","formalization":"missing"},
+    {"id":"proposition-5","kind":"proposition","locator":"p. 23; source.txt lines 950-951","formalization":"transparent Spec present; proof endpoint open with sorry"},
+    {"id":"proposition-6","kind":"proposition","locator":"pp. 26-27; source.txt lines 1058-1075","formalization":"transparent Spec present; proof endpoint open with sorry"}
+  ],
+  "deep_only_material": [
+    "unnumbered prose intuition and comparative-statics discussion",
+    "displayed resource and profit equations used as support for the named propositions",
+    "Figures 1-9 and their numerical illustrations",
+    "empirical motivation and policy discussion",
+    "proofs cited as residing in the separate Online Appendix, which is not part of the pinned v11 PDF"
+  ],
+  "note": "This is a complete authoring-stage source-only inventory, not an independent source-to-Lean semantic judgment or a closeout credential."
+}
