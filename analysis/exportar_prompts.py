@@ -40,8 +40,10 @@ for line in Path(sys.argv[1]).read_text(encoding="utf-8").splitlines():
             rows.append(("Seguimiento enviado al agente Lean (raw)",args["message"]))
 assert any(title.startswith("Usuario") for title,_ in rows),"No se encontró el prompt original: no inventar una transcripción."
 text="# Prompts y respuestas relevantes, raw\n\nSelección literal de mensajes visibles de esta sesión propia. Los títulos son metadatos editoriales; el contenido de los bloques no se reescribió. Se omiten razonamiento interno, instrucciones de sistema, credenciales y trazas privadas. No es un diálogo reconstruido.\n\n"
+rows=[(title,content) for title,content in rows if "gAAAA" not in content]
+text+="Los mensajes entre agentes que el registro almacena cifrados se omiten: no se presentan como texto legible ni se reconstruyen. La instrucción de formalización y su configuración están documentadas en `LEAN_RUN.md` y `lean/audit/GENERATION_LOG.md`.\n\n"
 for i,(title,content) in enumerate(rows,1):
     text+=f"## {i}. {title}\n\n````text\n{content}\n````\n\n"
 text+="La respuesta final raw de la corrida Sol, cuando esté disponible, se conserva en `logs/lean-agent-final.md`. Los fallos y comprobaciones se documentan en `LEAN_RUN.md` y en los artefactos originales de `lean/`.\n"
-(root/"prompts.md").write_text(text,encoding="utf-8")
+(root/"prompts.md").write_text(text,encoding="utf-8",newline="\n")
 print(f"Exportados {len(rows)} mensajes relevantes sin reescribirlos.")
