@@ -252,27 +252,43 @@ A two-type control admits multiple wages. Another violates top gains after chang
 
 \input{slides/lean-slide.tex}
 
-\begin{frame}{The handwritten check and the verdict}
-\IfFileExists{hand/derivacion.jpg}{%
+\begin{frame}{Handwritten check: time and resource constraints}
 \begin{columns}[T]
-\column{.55\textwidth}\centering\includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{hand/derivacion.jpg}
-\column{.41\textwidth}\small
-\[\wa_L-\tfrac15=\frac{7\ai-2}{10(1-\ai)}.\]
-The denominator is positive on the stated domain. Bottom gains depend on capability even with autonomy fixed.
-\end{columns}
-}{\IfFileExists{hand/derivacion.png}{%
-\centering\includegraphics[height=.65\textheight,width=.9\textwidth,keepaspectratio]{hand/derivacion.png}
-}{%
-\begin{block}{Student evidence pending}
-A photograph of the student's own derivation must be inserted here before submission.
-\end{block}
+\column{.54\textwidth}\centering
+\includegraphics[trim={75bp 70bp 100bp 780bp},clip,width=\linewidth,height=.73\textheight,keepaspectratio]{hand/derivacion-01.jpeg}
+\column{.43\textwidth}\small
+The handwritten calculation checks solver time:
 \[
-\wa_L-\tfrac15=\frac{7\ai-2}{10(1-\ai)},\qquad 0\le\ai\le\tfrac13.
+h(1-z)n(z)=1.
 \]
-The algebra rejects the claim that capability is irrelevant. The threshold belongs to the finite example.
+For $h=1/2$, a solver can assist two low-type workers or four middle-type workers.
 
-\small This typeset calculation does not satisfy the handwritten-photo requirement.
-}}
+The proposed allocation uses every type's available time. Zero profit then gives
+\[
+(w_L,w_M,w_H)=\left(\tfrac15,\tfrac35,\tfrac85\right).
+\]
+\footnotesize Original student photographs appear in full in the appendix.
+\end{columns}
+\end{frame}
+
+\begin{frame}{Handwritten check: the threshold and the verdict}
+\small
+Autonomous AI, $\mu=10$, $0\le a\le1/3$. The handwritten comparison is
+\[
+\wa_L=\frac{a}{2(1-a)}>\frac15
+\quad\Longleftrightarrow\quad 7a>2
+\quad\Longleftrightarrow\quad a>\frac27.
+\]
+\begin{columns}[c]
+\column{.61\textwidth}\centering
+\includegraphics[trim={50bp 70bp 45bp 1110bp},clip,width=\linewidth]{hand/derivacion-02.jpeg}
+\column{.36\textwidth}\small
+Since $2(1-a)>0$, multiplication preserves the inequality.
+
+At $a=2/7$, the wage is unchanged.
+
+\textbf{Verdict:} capability changes who gains even when autonomy is fixed. The value $2/7$ belongs to this finite example.
+\end{columns}
 \end{frame}
 
 \begin{frame}{What the checks taught us}
@@ -287,6 +303,15 @@ The algebra rejects the claim that capability is irrelevant. The threshold belon
 \end{frame}
 
 \appendix
+\begin{frame}{Original handwritten derivation: both pages}
+\begin{columns}[c]
+\column{.49\textwidth}\centering
+\includegraphics[height=.78\textheight,width=\linewidth,keepaspectratio]{hand/derivacion-01.jpeg}
+\column{.49\textwidth}\centering
+\includegraphics[height=.78\textheight,width=\linewidth,keepaspectratio]{hand/derivacion-02.jpeg}
+\end{columns}
+\vfill\centering\scriptsize Original photographs supplied by the student. Handwriting preserved in Spanish.
+\end{frame}
 \begin{frame}{Extension: output can rise while labor income falls}
 \small
 In our autonomous three-type economy, for $0\le a\le1/3$:

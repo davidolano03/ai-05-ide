@@ -1,14 +1,12 @@
-# Evidencia manuscrita pendiente
+# Derivación manuscrita
 
-Este directorio todavía no contiene una fotografía auténtica. Una explicación mecanografiada o una imagen generada no cumple ese requisito.
+Fotografías originales proporcionadas por el estudiante, incorporadas sin modificar sus bytes:
 
-Haz a mano la siguiente derivación, comprobando cada paso contra `analysis/derivacion.md`:
+- [Página 1: supuestos, tiempo del supervisor y recursos](derivacion-01.jpeg).
+- [Página 2: beneficio cero, salarios y umbral de capacidad](derivacion-02.jpeg).
 
-1. Escribe los tres tipos, sus masas y `h=1/2`.
-2. Deriva `n(z)=1/[h(1-z)]` a partir del tiempo disponible.
-3. Resuelve las tres ecuaciones de beneficio cero antes de IA y verifica `(1/5,3/5,8/5)`.
-4. Para autonomía y `0<=a<=1/3`, deriva `w_L*=a/[2(1-a)]`.
-5. Resta `1/5`, obtén `(7a-2)/[10(1-a)]` y explica por qué el denominador es positivo. Compara `a=1/10`, `2/7` y `3/10`.
-6. Escribe tu veredicto con tus palabras, distinguiendo este ejemplo de la Proposición 5 del continuo. Si no te convence un paso, señálalo.
+La derivación obtiene los salarios iniciales `(1/5,3/5,8/5)` y, para IA autónoma con `0<=a<=1/3`, el salario bajo `a/[2(1-a)]`. El trabajador bajo gana si y solo si `a>2/7`; en la igualdad su salario no cambia. Las cuentas coinciden con [la derivación analítica](../analysis/derivacion.md).
 
-Adjunta una foto legible de tu hoja. Para integrarla directamente, guárdala como `hand/derivacion.jpg` (o `derivacion.png`). `presentation.tex` la incluye automáticamente al recompilar. El slide muestra explícitamente el pendiente mientras no exista la foto; no afirma que una comprobación personal ya haya ocurrido.
+El Beamer muestra dos detalles ampliados y conserva las dos páginas completas en el apéndice. El recorte se realiza únicamente al maquetar en LaTeX; las imágenes originales permanecen íntegras. Las explicaciones y el veredicto de las diapositivas están en inglés; el manuscrito conserva el español original.
+
+Para la exposición, dedicar aproximadamente 50 segundos a la restricción de tiempo y 60 segundos al umbral. El punto decisivo es que el denominador es positivo: se puede multiplicar sin invertir la desigualdad. El umbral es propio del ejemplo discreto, no un valor universal del paper.

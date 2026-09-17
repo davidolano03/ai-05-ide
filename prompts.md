@@ -292,3 +292,18 @@ Cierro ya con lo comprobado. Solo faltan la copia final de Lean y el merge; no h
 ````
 
 La respuesta final raw de la corrida Sol, cuando esté disponible, se conserva en `logs/lean-agent-final.md`. Los fallos y comprobaciones se documentan en `LEAN_RUN.md` y en los artefactos originales de `lean/`.
+
+
+## Incorporación de la derivación manuscrita
+
+Usuario, literal (con dos fotografías adjuntas):
+
+```text
+Agrega mi derivación a mano al trabajo y a la presentación
+```
+
+Respuesta inicial del asistente, literal:
+
+```text
+Agregaré las dos fotos a `hand/` y al Beamer, comprobaré que se lean bien y actualizaré el estado de la entrega mediante un PR.
+```

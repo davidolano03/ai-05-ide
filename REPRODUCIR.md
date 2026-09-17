@@ -24,7 +24,7 @@ tectonic -k --keep-logs presentation.tex
 
 También se pueden usar herramientas habituales de LaTeX con los paquetes estándar indicados en el preámbulo. La compilación requiere las figuras y `slides/lean-slide.tex`, incluidos en el repositorio. No tiene animaciones ni capturas del paper.
 
-Para incorporar la evidencia personal, añadir `hand/derivacion.jpg` o `hand/derivacion.png` y recompilar. Antes de entregar, comprobar que la foto sea legible en pantalla y explicar la cuenta con palabras propias. Una foto poco legible no queda validada por compilar correctamente.
+Las fotografías originales están en `hand/derivacion-01.jpeg` y `hand/derivacion-02.jpeg`. El Beamer incluye detalles ampliados mediante recortes de maquetación y las dos páginas completas en el apéndice. Recompilar conserva esa disposición sin modificar las imágenes. Las anotaciones manuscritas permanecen en español; la explicación de las diapositivas está en inglés.
 
 La revisión local del PDF utilizó PyMuPDF y Pillow con `analysis/revisar_presentacion.py`; esas dependencias de revisión son opcionales y no se necesitan para los cálculos económicos. El script renderiza páginas en `.work/slides-qa/`, comprueba límites del lienzo y permite inspección visual. Una comprobación automática de límites no sustituye mirar las diapositivas.
 
