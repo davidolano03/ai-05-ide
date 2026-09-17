@@ -1,2 +1,16 @@
-# ai-05-ide
+# IA en la economía del conocimiento
 
+**Ide, E., & Talamàs, E. (2025).** *Artificial Intelligence in the Knowledge Economy*, JPE 133(12), 3762–3800. [DOI](https://doi.org/10.1086/737233). **Versión leída y fijada para Lean:** [arXiv v11](https://arxiv.org/abs/2312.05481v11), 35 páginas, portada del 25/02/2025 (registro arXiv del 24/02). No se utilizó el PDF del curso de mayo ni se sustituyó por v12.
+
+**Pregunta.** ¿Quién gana cuando el conocimiento se puede copiar en agentes de IA, pero el tiempo humano sigue siendo escaso? La capacidad determina qué problemas resuelve la IA; la autonomía determina qué puestos puede ocupar. Ambas dimensiones afectan la distribución.
+
+**Problema del agente.** Cada persona dispone de una unidad de tiempo, conocimiento observable \(z\) y maximiza su ingreso. Una oportunidad trae un problema uniforme en \([0,1]\). La empresa competitiva elige producir individualmente o contratar trabajadores y un supervisor. Cada consulta consume \(h\) unidades de tiempo del supervisor, incluso si falla. Por ello, \(n(z)=1/[h(1-z)]\), y el beneficio de una empresa humana es \(n(z)[s-w(z)]-w(s)\). Los salarios y la renta del cómputo equilibran los mercados y dejan beneficio cero.
+
+**Resultados y condiciones.** Masa humana uno, densidad \(g\) continua y estrictamente positiva en \([0,1]\), conocimiento exógeno, \(0<h<h_0(G)<1\) (sin productores independientes antes de IA), empresas de hasta dos capas, libre competencia, oportunidades abundantes, capacidad común \(a=z_{AI}\in[0,1)\) y cómputo suficientemente abundante respecto del tiempo humano. Una condición suficiente es \(\mu>\int_0^a h(1-z)\,dG(z)+[1-G(a)]/[h(1-a)]\). Las comparaciones mantienen los mismos \(G,h,a,\mu\).
+
+- **Proposición 5, IA autónoma:** \(B=\{z\le a:w^*(z)>w(z)\}\ne\varnothing\) **si y solo si** \(a>\bar a\), con \(\bar a\in\operatorname{int}W\), donde \(W\) son los trabajadores **antes** de IA. Siempre hay ganadores arriba para \(a<1\), bajo las condiciones anteriores. No significa que todas las personas más capaces que la IA ganen. El tipo \(a\) pierde; el ingreso laboral agregado y la producción crecen.
+- **Proposición 6, copiloto:** equilibrio único, eficiente y que maximiza ingreso laboral; renta del cómputo cero. Si \(a\le w(0)\), no hay adopción y los salarios no cambian. Si \(a>w(0)\), los usuarios de IA son los menos informados y hay ganadores y perdedores estrictos. En un entorno de cero, \(w^\star\ge\max\{w,w^*\}\), estrictamente si \(a>w(0)\). En un entorno de uno, \(w^\star\le w^*\), estrictamente para \(z\ne1\). La producción autónoma supera estrictamente la del copiloto. No confundir producción con ingreso laboral ni ganancias débiles con estrictas.
+
+**Trabajo propio.** [Derivación de tres tipos](analysis/derivacion.md), [programa lineal reproducible](analysis/modelo_discreto.py), [resultados](results/equilibrios.json) y [verificación](results/verificacion.md). El ejemplo obtiene umbrales \(2/7\) y \(1/5\); son resultados del modelo finito, no valores universales del paper. [Beamer en inglés](presentation.pdf), [fuente](presentation.tex) y [guion oral en español](presentation-notes.md).
+
+**Trazabilidad y pendientes.** [Prompts sin reescribir](prompts.md), [corrida y alcance de Lean](LEAN_RUN.md), [fuentes](sources.md). La fotografía auténtica de [hand/](hand/README.md) requiere la participación del estudiante; no se reemplaza por una imagen sintética. El estado de los requisitos está en [ENTREGA.md](ENTREGA.md).
