@@ -12,7 +12,7 @@ paper-formalization skill and workflow in this repository.
 Use IT25KnowledgeEconomy as the paper folder.
 ```
 
-La instrucción completa y los seguimientos están en `prompts.md`. Revisión inicial de AppliedModelingLib: `2db7d108cd3a2cb10148974bb2a77856e7d87428`. Fuente: PDF arXiv v11, SHA-256 `0b3c727a204f7801a9598dacd7ca7fdb385e21ee6877992ea0eb13c0538d8ebf`. Elan 4.2.4 y Lean 4.30.0-rc2 se instalaron localmente. Los materiales económicos y el Beamer se prepararon por separado; no se atribuye a todo el trabajo el modelo del agente Lean.
+La solicitud original y las respuestas visibles están en `prompts.md`; los mensajes entre agentes almacenados cifrados se excluyeron. El registro de generación está en `lean/audit/GENERATION_LOG.md`. Revisión inicial de AppliedModelingLib: `2db7d108cd3a2cb10148974bb2a77856e7d87428`. Fuente: PDF arXiv v11, SHA-256 `0b3c727a204f7801a9598dacd7ca7fdb385e21ee6877992ea0eb13c0538d8ebf`. Elan 4.2.4 y Lean 4.30.0-rc2 se instalaron localmente. Los materiales económicos y el Beamer se prepararon por separado; no se atribuye a todo el trabajo el modelo del agente Lean.
 
 ## Qué quedó probado
 
